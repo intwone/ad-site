@@ -1,0 +1,274 @@
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: SourceSansPro-Regular;
+  src: url('../fonts/sspro/SourceSansPro-Regular.otf'); 
+}
+
+@font-face {
+  font-family: SourceSansPro-Black;
+  src: url('../fonts/sspro/SourceSansPro-Black.otf'); 
+}
+
+@font-face {
+  font-family: SourceSansPro-ExtraLight;
+  src: url('../fonts/sspro/SourceSansPro-ExtraLight.otf'); 
+}
+
+@font-face {
+  font-family: SourceSansPro-Semibold;
+  src: url('../fonts/sspro/SourceSansPro-Semibold.otf'); 
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  padding: 0 150px;
+}
+
+.brand img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.brand img:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.divisor {
+  height: 35px;
+  margin-left: 28px;
+  border-left: 1px solid rgb(175, 158, 230);
+}
+
+.menu-items {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+
+.menu-items a:hover {
+  color: rgb(175, 158, 230);
+  transition: 0.3s;
+}
+
+.style-text {
+  font-family: SourceSansPro-Semibold;
+  margin-left: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-top: 3px;
+  font-weight: bold;
+}
+
+.style-text a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-social {
+  margin-left: 150px;
+}
+
+.style-button button {
+  line-height: 38px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(113, 89, 193);
+  background-color: rgb(255, 255, 255);
+  padding: 0px 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.form-group {
+  margin-top: 15px;
+  padding: 0 150px;
+  display: flex;
+  flex-direction: row;
+}
+
+.form-group input {
+  border: 1px solid rgb(175, 158, 230);
+  font-family: SourceSansPro-Regular;
+  font-size: 14px;
+}
+
+.search-products input {
+  height: 48px;
+  width: 300px;
+  border-radius: 3px;
+  padding: 0px 35px 0px 15px;
+  border: none;
+  font-family: SourceSansPro-Regular;
+  outline: none;
+  color: rgb(102, 102, 102);
+}
+
+.search-products  img {
+  width: 20px;
+  height: 20px;
+  margin: 0px 12px 4px -33px;
+  cursor: pointer;
+}
+
+.search-center {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.search-center input {
+  border: 1px solid rgb(175, 158, 230);
+}
+
+::-webkit-input-placeholder {
+  font-family: SourceSansPro-Regular;
+  font-size: 14px;
+}
+
+.category {
+  width: 100%;
+  height: 350px;
+  padding: 30px 100px;
+  color: rgba(75, 75, 75, 0.76);
+  font-family: SourceSansPro-Regular;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.icon-category img {
+  width: 40px;
+  height: 40px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.images-category {
+  text-align: center;
+}
+
+.box-ads {
+  width: 100%;
+  padding: 10px 100px;
+}
+
+.list-ads {
+  width: 100%;
+  height: 600px;
+  border: 1px solid rgb(113, 89, 193);
+}
+
+section {
+  height: 170px;
+  width: 100%;
+  background-color: rgb(113, 89, 193);
+}
+
+footer {
+  font-family: SourceSansPro-Regular;
+  color: rgb(102, 102, 102);
+  text-align: center;
+  width: 100%;
+  height: 50px;
+}
+
+.send-email input {
+  height: 48px;
+  width: 300px;
+  border-radius: 3px;
+  padding: 0px 35px 0px 15px;
+  border: none;
+  font-family: SourceSansPro-Regular;
+  outline: none;
+  color: rgb(102, 102, 102);
+}
+
+.send-email img {
+  width: 20px;
+  height: 20px;
+  margin: 0px 12px 4px -33px;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+  font-family: SourceSansPro-Regular;
+  color: rgb(102, 102, 102);
+  font-size: 16px;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+.title-sendemail {
+  font-size: 16px;
+  color: #fff;
+  font-family: SourceSansPro-Semibold;
+}
+
+.title-sendemail p {
+  padding: 10px;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 25px;
+  justify-content: space-around;
+  padding: 0px 490px;
+
+}
+
+.social i {
+  font-size: 25px;
+  color: #fff;
+}
+
+.social i:hover {
+  color: rgb(175, 158, 230);
+  transition: 0.3s;
+}
