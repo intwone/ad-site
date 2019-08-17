@@ -105,6 +105,11 @@
   margin-left: 150px;
 }
 
+.style-button {
+  display: flex;
+  flex-direction: row;
+}
+
 .style-button button {
   line-height: 38px;
   font-size: 14px;
@@ -117,6 +122,7 @@
   outline: none;
   display: flex;
   flex-direction: row;
+  margin-left: 10px;
 }
 
 .form-group {
@@ -132,7 +138,13 @@
   font-size: 14px;
 }
 
-.search-products input {
+.search-products {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.search-input {
   height: 48px;
   width: 300px;
   border-radius: 3px;
@@ -141,22 +153,18 @@
   font-family: SourceSansPro-Regular;
   outline: none;
   color: rgb(102, 102, 102);
+  border: 1px solid rgb(175, 158, 230);
 }
 
-.search-products  img {
-  width: 20px;
-  height: 20px;
-  margin: 0px 12px 4px -33px;
-  cursor: pointer;
+.search-icon {
+  width: 25px;
+  height: 25px;
+  margin: 10px 12px 4px -37px;
 }
 
 .search-center {
   text-align: center;
-  margin-top: 15px;
-}
-
-.search-center input {
-  border: 1px solid rgb(175, 158, 230);
+  margin-top: 30px;
 }
 
 ::-webkit-input-placeholder {
@@ -166,7 +174,7 @@
 
 .category {
   width: 100%;
-  height: 350px;
+  height: 150px;
   padding: 30px 100px;
   color: rgba(75, 75, 75, 0.76);
   font-family: SourceSansPro-Regular;
@@ -192,13 +200,26 @@
 
 .box-ads {
   width: 100%;
-  padding: 10px 100px;
+  padding: 0px 100px;
 }
 
 .list-ads {
   width: 100%;
   height: 600px;
-  border: 1px solid rgb(113, 89, 193);
+  margin-bottom: 30px; 
+}
+
+.ads-new {
+  font-family: SourceSansPro-Regular;
+  color: rgb(75, 75, 75);
+  font-size: 25px;
+  line-height: 48px;
+}
+
+.ads-bar {
+  width: 50px;
+  height: 3px;
+  background-color: rgb(113, 89, 193);
 }
 
 section {
@@ -215,32 +236,35 @@ footer {
   height: 50px;
 }
 
-.send-email input {
+.send-email {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.send-input {
   height: 48px;
   width: 300px;
   border-radius: 3px;
-  padding: 0px 35px 0px 15px;
   border: none;
+  padding-left: 15px;
+  padding-right: 40px;
   font-family: SourceSansPro-Regular;
   outline: none;
   color: rgb(102, 102, 102);
 }
 
-.send-email img {
-  width: 20px;
-  height: 20px;
-  margin: 0px 12px 4px -33px;
-  cursor: pointer;
+.search-icon {
+  width: 25px;
+  height: 25px;
+  margin: 10px 12px 4px -37px;
+  outline: none;
 }
 
 ::-webkit-input-placeholder {
   font-family: SourceSansPro-Regular;
   color: rgb(102, 102, 102);
   font-size: 16px;
-}
-
-footer p {
-  margin: 10px 0;
 }
 
 .title-sendemail {
@@ -252,15 +276,16 @@ footer p {
 .title-sendemail p {
   padding: 10px;
 }
+.copyright {
+  margin-bottom: 15px;
+}
 
 .social {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   margin-top: 25px;
   justify-content: space-around;
-  padding: 0px 490px;
-
+  padding: 0px 555px;
 }
 
 .social i {
