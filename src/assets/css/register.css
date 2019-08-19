@@ -1,0 +1,132 @@
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: SourceSansPro-Regular;
+  src: url('../fonts/sspro/SourceSansPro-Regular.otf'); 
+}
+
+@font-face {
+  font-family: SourceSansPro-Black;
+  src: url('../fonts/sspro/SourceSansPro-Black.otf'); 
+}
+
+@font-face {
+  font-family: SourceSansPro-ExtraLight;
+  src: url('../fonts/sspro/SourceSansPro-ExtraLight.otf'); 
+}
+
+@font-face {
+  font-family: SourceSansPro-Semibold;
+  src: url('../fonts/sspro/SourceSansPro-Semibold.otf'); 
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(113, 89, 193);
+}
+
+.login-body {
+  width: 350px;
+  height: 350px;
+  border-radius: 4px;
+  margin: 140px auto 0px;
+  padding: 20px 30px; 
+  background-color: #fff;
+}
+
+.login-title {
+  font-family: SourceSansPro-Semibold;
+  font-size: 24px;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.form-body input {
+  height: 36px;
+  font-size: 14px;
+  color: rgb(48, 43, 62);
+  width: 100%;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  background: rgb(255, 255, 255);
+  border-color: rgb(204, 204, 204);
+  padding: 0px 15px 0px 42px;
+  outline: none;
+}
+
+.button-submit button {
+  border: none;
+  outline: none;
+  background-color: rgb(113, 89, 193);
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  font-family: SourceSansPro-Semibold;
+  color: #fff;
+  font-size: 20px;
+}
+
+.button-submit button:hover {
+  background-color: rgb(131, 109, 202);
+  transition: 0.3s;
+}
+
+::-webkit-input-placeholder {
+  font-family: SourceSansPro-Regular;
+  font-size: 14px;
+}
+
+.icon:before {
+  position: absolute;
+  margin: -45px 0px 0px 13px;;
+  color: rgb(113, 89, 193);
+}
+
+.forgot-user-password {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.forgot-user-password a {
+  font-family: SourceSansPro-Regular;
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+}
+
+.forgot-user-password span {
+  font-family: SourceSansPro-Regular;
+  font-size: 14px;
+  color: rgba(102, 102, 102, 0.623);
+}
+
+.forgot-user-password a:hover {
+  transition: 0.5s;
+  color: rgb(70, 43, 156);
+}
