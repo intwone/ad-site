@@ -131,6 +131,12 @@ body {
   color: rgb(70, 43, 156);
 }
 
+.signup-social small {
+  font-family: SourceSansPro-Regular;
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+}
+
 .signup-social {
   margin-top: 25px;
 }
@@ -153,3 +159,8 @@ body {
   height: 30px;
   margin-right: 10px;
 }
+
+.signup-icons img:hover {
+  opacity: 0.8;
+}
+

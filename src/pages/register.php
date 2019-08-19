@@ -16,22 +16,22 @@
   <body>
     <div class="container">
       <div class="register-body">
-        <form class="form-body" method="POST">
+        <form class="form-body" method="POST" action="receive-data.php">
           <div class="register-title">Criar conta</div>
 
-          <input class="input" type="text" name="name" placeholder="Name">
+          <input class="input" type="text" name="name" placeholder="Name" required>
           <i class="fa fa-user icon"></i>
 
-          <input class="input" type="email" name="email" placeholder="Email">
-          <i class="fa fa-phone icon"></i>
-
-          <input class="input" type="text" name="telephone" placeholder="Telephone">
+          <input class="input" type="email" name="email" placeholder="Email" required>
           <i class="fa fa-envelope icon"></i>
 
-          <input class="input" type="password" name="password" maxlength="8" placeholder="Password">
+          <input class="input" type="text" name="telephone" placeholder="Telephone" required>
+          <i class="fa fa-phone icon"></i>
+
+          <input class="input" type="password" name="password1" maxlength="8" placeholder="Password" required>
           <i class="fa fa-lock icon"></i>
 
-          <input class="input" type="password" name="password" maxlength="8" placeholder="Re-password">
+          <input class="input" type="password" name="password2" maxlength="8" placeholder="Re-password" required>
           <i class="fa fa-lock icon"></i>
 
           <div class="button-submit"><button>Login</button></div>

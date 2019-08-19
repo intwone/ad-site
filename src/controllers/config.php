@@ -4,6 +4,7 @@ session_start();
 $dsn = "mysql:dbname=adsite;host=localhost";
 $databaseUser = "root";
 $operatingSystem = PHP_OS;
+global $pdoConnection;
 
 if($operatingSystem == "WINNT") {
   $databasePass = "";
