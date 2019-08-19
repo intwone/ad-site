@@ -15,27 +15,39 @@
   </head>
   <body>
     <div class="container">
-      <div class="login-body">
+      <div class="register-body">
         <form class="form-body" method="POST">
-          <div class="login-title">Acessar conta</div>
+          <div class="register-title">Criar conta</div>
+
+          <input class="input" type="text" name="name" placeholder="Name">
+          <i class="fa fa-user icon"></i>
 
           <input class="input" type="email" name="email" placeholder="Email">
+          <i class="fa fa-phone icon"></i>
+
+          <input class="input" type="text" name="telephone" placeholder="Telephone">
           <i class="fa fa-envelope icon"></i>
 
           <input class="input" type="password" name="password" maxlength="8" placeholder="Password">
           <i class="fa fa-lock icon"></i>
 
+          <input class="input" type="password" name="password" maxlength="8" placeholder="Re-password">
+          <i class="fa fa-lock icon"></i>
+
           <div class="button-submit"><button>Login</button></div>
 
-          <div class="forgot-user-password">
-            <span>Forgot</span>
-            <a href="reset.php">Username / Password?</a>
+          <div class="signup-social">
+            <div><small>Sign up with</small></div>
+            <div class="signup-icons">
+              <div><a href="#"><img src="../assets/images/facebook.png" alt="Facebook"></a></div>
+              <div><a href="#"><img src="../assets/images/google-plus.png" alt="Google Plus"></a></div>
+              <div><a href="#"><img src="../assets/images/twitter.png" alt="Twitter"></a></div>
+              <div><a href="#"><img src="../assets/images/linkedin.png" alt="Linkedin"></a></div>
+            </div>
           </div>
         </form>
       </div>
     </div>
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -39,9 +39,13 @@
           </div>
           <div><i class="fa fa-sign-out-alt"></i></div>
         <?php else: ?>
-        <div class="style-button">
-          <div><Button>Login</Button></div>
-          <div><Button>Cadastrar</Button></div>
-        </div>
+          <div class="style-button">
+            <div>
+              <a href="../src/pages/login.php"><Button>Login</Button></a>
+            </div>
+            <div>
+              <a href="../src/pages/register.php"><Button>Cadastrar</Button></a>
+            </div>
+          </div>
         <?php endif; ?>
       </div>

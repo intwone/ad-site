@@ -48,16 +48,16 @@ body {
   background-color: rgb(113, 89, 193);
 }
 
-.register-body {
+.login-body {
   width: 350px;
-  height: 500px;
+  height: 350px;
   border-radius: 4px;
-  margin: 60px auto 0px;
+  margin: 140px auto 0px;
   padding: 20px 30px; 
   background-color: #fff;
 }
 
-.register-title {
+.login-title {
   font-family: SourceSansPro-Semibold;
   font-size: 24px;
   text-align: center;
@@ -66,10 +66,9 @@ body {
 }
 
 .form-body input {
-  font-family: SourceSansPro-Regular;
-  color: #666;
   height: 36px;
   font-size: 14px;
+  color: rgb(48, 43, 62);
   width: 100%;
   border-radius: 4px;
   border-width: 1px;
@@ -129,27 +128,4 @@ body {
 .forgot-user-password a:hover {
   transition: 0.5s;
   color: rgb(70, 43, 156);
-}
-
-.signup-social {
-  margin-top: 25px;
-}
-
-.signup-social {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.signup-icons {
-  display: flex;
-  flex-direction: row;
-  margin-left: 15px;
-}
-
-.signup-icons img {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
 }
