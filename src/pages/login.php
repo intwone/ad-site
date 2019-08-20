@@ -19,10 +19,37 @@
         <form class="form-body" method="POST">
           <div class="login-title">Acessar conta</div>
 
-          <input class="input" type="email" name="email" placeholder="Email">
+          <!-- php commands start -->
+          <?php
+          require_once '../classes/Users.php';
+
+          $user = new Users();
+
+          if(isset($_POST['email']) && !empty($_POST['email'])) {
+            $email     = addslashes(trim($_POST['email']));
+            $password  = md5($_POST['password']); 
+
+            if($user->userLogin($email, $password)) {
+              header("Location: panel-user.php");
+            } else {
+              ?>
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                Email inexistente! <br/>
+                <a href="login.php" class="alert-link">Verifique se digitou os dados corretamente.</a>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <?php
+            }
+          }
+          ?>
+          <!-- php commands finish-->
+
+          <input class="input" type="email" name="email" placeholder="Email" required />
           <i class="fa fa-envelope icon"></i>
 
-          <input class="input" type="password" name="password" maxlength="8" placeholder="Password">
+          <input class="input" type="password" name="password" maxlength="8" placeholder="Password" required />
           <i class="fa fa-lock icon"></i>
 
           <div class="button-submit"><button>Login</button></div>

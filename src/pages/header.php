@@ -19,7 +19,7 @@
     <div class="container-fluid">
       <div class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(113, 89, 193)">
         <div class="brand">
-          <img src="../src/assets/images/brand.png" alt="">
+          <img src="../src/assets/images/brand.png" alt="Brand">
         </div>
 
         <div class="divisor"></div>

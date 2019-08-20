@@ -29,8 +29,8 @@
             $name      = addslashes(trim($_POST['name']));
             $email     = addslashes(trim($_POST['email']));
             $telephone = addslashes(trim($_POST['telephone']));
-            $password1 = $_POST['password1'];
-            $password2 = $_POST['password2'];
+            $password1 = md5($_POST['password1']);
+            $password2 = md5($_POST['password2']);
 
             if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['password1'])) {
               if($user->register($name, $email, $telephone, $password1)) {
@@ -53,19 +53,19 @@
           ?>
           <!-- php commands finish-->
 
-          <input class="input" type="text" name="name" placeholder="Name" required>
+          <input class="input" type="text" name="name" placeholder="Name" required />
           <i class="fa fa-user icon"></i>
 
-          <input class="input" type="email" name="email" placeholder="Email" required>
+          <input class="input" type="email" name="email" placeholder="Email" required />
           <i class="fa fa-envelope icon"></i>
 
-          <input class="input" type="text" name="telephone" placeholder="Telephone" required>
+          <input class="input" type="text" name="telephone" placeholder="Telephone" required />
           <i class="fa fa-phone icon"></i>
 
-          <input class="input" type="password" name="password1" maxlength="8" placeholder="Password" required>
+          <input class="input" type="password" name="password1" maxlength="8" placeholder="Password" required />
           <i class="fa fa-lock icon"></i>
 
-          <input class="input" type="password" name="password2" maxlength="8" placeholder="Re-password" required>
+          <input class="input" type="password" name="password2" maxlength="8" placeholder="Re-password" required />
           <i class="fa fa-lock icon"></i>
 
           <div class="button-submit">
