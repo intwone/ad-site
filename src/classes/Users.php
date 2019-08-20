@@ -8,7 +8,7 @@ class Users {
    */
   public function register($name, $email, $telephone, $password) {
     global $pdoConnection;
-    $sql = "SELECT * FROM db_user WHERE usr_name = :usr_name";
+    $sql = "SELECT * FROM db_users WHERE usr_name = :usr_name";
     $sql = $pdoConnection->prepare($sql);
     $sql->bindValue(':usr_name', $name);
     $sql->execute();
@@ -27,12 +27,13 @@ class Users {
               :usr_telephone 
               )";
     
-    $sql = $pdoConnection->prepare($sql);
-    $sql->bindValue(':usr_name', $name);
-    $sql->bindValue(':usr_email', $email);
-    $sql->bindValue(':usr_password', $telephone);
-    $sql->bindValue(':usr_telephone', $password);
-    $sql->execute();
+      $sql = $pdoConnection->prepare($sql);
+      $sql->bindValue(':usr_name', $name);
+      $sql->bindValue(':usr_email', $email);
+      $sql->bindValue(':usr_password', $telephone);
+      $sql->bindValue(':usr_telephone', $password);
+      $sql->execute();
+
       return true;
     } else {
       return false;

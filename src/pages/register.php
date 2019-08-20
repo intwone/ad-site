@@ -16,8 +16,42 @@
   <body>
     <div class="container">
       <div class="register-body">
-        <form class="form-body" method="POST" action="receive-data.php">
+        <form class="form-body" method="POST" action="">
           <div class="register-title">Criar conta</div>
+
+          <!-- php commands start -->
+          <?php
+          require_once '../classes/Users.php';
+
+          $user = new Users();
+
+          if(isset($_POST['name']) && !empty($_POST['name'])) {
+            $name      = addslashes(trim($_POST['name']));
+            $email     = addslashes(trim($_POST['email']));
+            $telephone = addslashes(trim($_POST['telephone']));
+            $password1 = $_POST['password1'];
+            $password2 = $_POST['password2'];
+
+            if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['password1'])) {
+              if($user->register($name, $email, $telephone, $password1)) {
+                ?>
+                <div class="alert alert-success" role="alert">
+                  Cadastro efetuado com sucesso! <br/>
+                  <a href="login.php" class="alert-link">Ir para a página de login.</a>
+                </div>
+                <?php
+              } else {
+                ?>
+                <div class="alert alert-warning" role="alert">
+                  Email já cadastrado! <br/>
+                  <a href="login.php" class="alert-link">Ir para a página de login.</a>
+                </div>
+                <?php
+              }
+            }
+          }
+          ?>
+          <!-- php commands finish-->
 
           <input class="input" type="text" name="name" placeholder="Name" required>
           <i class="fa fa-user icon"></i>
@@ -34,7 +68,9 @@
           <input class="input" type="password" name="password2" maxlength="8" placeholder="Re-password" required>
           <i class="fa fa-lock icon"></i>
 
-          <div class="button-submit"><button>Login</button></div>
+          <div class="button-submit">
+            <button type="submit" data-toggle="modal" data-target="#exampleModal">Cadastrar</button>
+          </div>
 
           <div class="signup-social">
             <div><small>Sign up with</small></div>
