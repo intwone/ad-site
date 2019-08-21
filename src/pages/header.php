@@ -37,7 +37,7 @@ require_once '../src/controllers/config.php';
         <?php if(isset($_SESSION['userLogged']) && !empty($_SESSION['userLogged'])): ?>
           <div class="user-bar">
             <div class="user-photo"><img src="../src/assets/images/user.png" alt=""></div>
-            <div class="user-name">Cassio Oliveira</div>
+            <div class="user-name">Cassio Oliveira Silva </div>
             <div class="user-logout">
               <a href="logout.php">
                 <img src="../src/assets/images/sign-out.png" alt="">

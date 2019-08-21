@@ -305,7 +305,6 @@ footer {
 
 .user-name {
   color: #fff;
-  padding: 0px 10px;
   font-size: 12px;
 }
 
@@ -314,10 +313,12 @@ footer {
   height: 60px;
   border-radius: 50%;
   border: 3px solid #ffff;
+  margin-right: 10px;
 }
 
 .user-logout {
   text-align: center;
+  padding: 10px;
 }
 
 .user-logout img {
