@@ -1,4 +1,6 @@
-<?php require_once '../src/controllers/config.php'; ?>
+<?php 
+require_once '../src/controllers/config.php'; 
+?>
 
 <!doctype html>
 <html lang="en">
@@ -25,19 +27,24 @@
         <div class="divisor"></div>
 
         <div class="menu-items">
-          <div class="style-text"><a href="">Meus anúncios</a></div>
+          <?php if(isset($_SESSION['userLogged']) && !empty($_SESSION['userLogged'])): ?>
+          <div class="style-text"><a href="">Minha Conta</a></div>
+          <?php endif; ?>
           <div class="style-text"><a href="">Ajuda</a></div>
           <div class="style-text"><a href="">Chat</a></div>
-          <div class="style-text"><a href="">Minha Conta</a></div>
         </div>
 
         <?php if(isset($_SESSION['userLogged']) && !empty($_SESSION['userLogged'])): ?>
-          <div><i class="fa fa-cog"></i></div>
-          <div>
-            <div>FOTO</div>
-            <div>NOME</div>
+          <div class="user-bar">
+            <div class="user-photo"><img src="../src/assets/images/user.png" alt=""></div>
+            <div class="user-name">Cassio Oliveira Silva</div>
+            <div class="user-logout">
+              <a href="logout.php">
+                <img src="../src/assets/images/sign-out.png" alt="">
+                <small>Logout</small>
+              </a>
+            </div>
           </div>
-          <div><i class="fa fa-sign-out-alt"></i></div>
         <?php else: ?>
           <div class="style-button">
             <div>

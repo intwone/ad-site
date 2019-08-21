@@ -30,12 +30,14 @@
             $password  = md5($_POST['password']); 
 
             if($user->userLogin($email, $password)) {
-              header("Location: panel-user.php");
+              ?>
+              <script type="text/javascript">window.location.href="../../public/";</script>
+              <?php
             } else {
               ?>
               <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                Email inexistente! <br/>
-                <a href="login.php" class="alert-link">Verifique se digitou os dados corretamente.</a>
+                Cadastro não encontrado! <br/>
+                <strong>Verifique se digitou os dados corretamente.</strong>
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>

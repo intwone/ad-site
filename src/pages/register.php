@@ -16,7 +16,7 @@
   <body>
     <div class="container">
       <div class="register-body">
-        <form class="form-body" method="POST" action="">
+        <form class="form-body" method="POST">
           <div class="register-title">Criar conta</div>
 
           <!-- php commands start -->
@@ -69,7 +69,7 @@
           <i class="fa fa-lock icon"></i>
 
           <div class="button-submit">
-            <button type="submit" data-toggle="modal" data-target="#exampleModal">Cadastrar</button>
+            <button>Cadastrar</button>
           </div>
 
           <div class="signup-social">

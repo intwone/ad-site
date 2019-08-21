@@ -52,7 +52,7 @@
 .navbar {
   height: 80px;
   width: 100%;
-  padding: 0 150px;
+  padding: 0 80px;
 }
 
 .brand img {
@@ -75,9 +75,6 @@
 .menu-items {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-left: 20px;
 }
 
 .menu-items a:hover {
@@ -91,8 +88,6 @@
   color: #fff;
   text-transform: uppercase;
   font-size: 15px;
-  margin-top: 3px;
-  font-weight: bold;
 }
 
 .style-text a {
@@ -299,4 +294,41 @@ footer {
 .social i:hover {
   color: rgb(175, 158, 230);
   transition: 0.3s;
+}
+
+.user-bar {
+  display: flex;
+  width: 345px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-name {
+  color: #fff;
+  padding: 0px 10px;
+  font-size: 12px;
+}
+
+.user-photo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #ffff;
+}
+
+.user-logout {
+  text-align: center;
+}
+
+.user-logout img {
+  width: 20px;
+  height: 20px;
+}
+
+.user-logout a {
+  text-decoration: none;
+}
+
+.user-logout a small {
+  color: #fff;
 }
