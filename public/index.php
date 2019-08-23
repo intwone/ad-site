@@ -105,14 +105,9 @@
 
 <div class="box-ads">
   <div class="list-ads">
-    <?php if(isset($_SESSION['userLogged']) && !empty($_SESSION['userLogged'])): ?>
-      <div class="ads-new">Meus Anúncios</div>
-    <?php else: ?>
-      <div class="ads-new">Anúncios recentes</div>
-    <?php endif; ?>
+    <div class="ads-new">Anúncios recentes</div>
     <div class="ads-bar"></div>
     <div class="ads"></div>
-    
   </div>
 </div>
 

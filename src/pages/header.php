@@ -1,6 +1,4 @@
-<?php 
-require_once '../src/controllers/config.php'; 
-?>
+<?php require_once '../src/controllers/config.php'; ?>
 
 <!doctype html>
 <html lang="en">
@@ -28,7 +26,7 @@ require_once '../src/controllers/config.php';
 
         <div class="menu-items">
           <?php if(isset($_SESSION['userLogged']) && !empty($_SESSION['userLogged'])): ?>
-          <div class="style-text"><a href="">Minha Conta</a></div>
+          <div class="style-text"><a href="../src/pages/my-adverts.php">Meus Anúncios</a></div>
           <?php endif; ?>
           <div class="style-text"><a href="">Ajuda</a></div>
           <div class="style-text"><a href="">Chat</a></div>
@@ -36,8 +34,8 @@ require_once '../src/controllers/config.php';
 
         <?php if(isset($_SESSION['userLogged']) && !empty($_SESSION['userLogged'])): ?>
           <div class="user-bar">
-            <div class="user-photo"><img src="../src/assets/images/user.png" alt=""></div>
-            <div class="user-name">Cassio Oliveira Silva </div>
+            <div class="user-photo"><img src="../src/assets/images/user1.png" alt=""></div>
+            <div class="user-name">Cassio Oliveira Silva</div>
             <div class="user-logout">
               <a href="logout.php">
                 <img src="../src/assets/images/sign-out.png" alt="">
